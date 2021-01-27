@@ -1,7 +1,8 @@
 const { Client } = require('discord.js');
-const logs = require('discord-logs');
 const client = new Client();
-logs(client);
+const { Events } = require("discord-addons");
+
+new Events(client);
 
 const config = {
     guildID: "Guild ID",
